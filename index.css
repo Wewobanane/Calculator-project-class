@@ -1,67 +1,230 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.screen {
+  height: 100px;
+}
+
+.screen-input {
+  height: 65%;
+  width: 100%;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 5px;
+  color: white;
+  font-size: 30px;
+  text-align: right;
+}
+
+.keys {
+  border: 2px solid yellow;
+  width: 430px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5vw;
+}
+
+button {
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  font-size: 2.5rem;
+  background-color: #424242;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #5a5a5a;
+}
+
+button:active {
+  background-color: #858585;
+}
+
+.operator {
+  background-color: #ffa500;
+}
+
+.operator:hover {
+  background-color: #fcb735;
+}
+
+.operator:active {
+  background-color: #fecc71;
+}
+@media screen and (min-width: 924px) {
   body {
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
+    overflow: hidden;
   }
-  
-  .screen {
-    height: 100px;
+  button {
+    width: 3rem;
+    height: 3rem;
+    margin-left: 1vw;
   }
-  
-  .screen-input{
-    height: 75%;
-    width: 100%;
-    background-color: transparent;
-    border: 2px solid white;
-    border-radius: 5px;
-    color: white;
-    font-size: 30px;
-    text-align: right;
-  }
-  
   .keys {
-    border: 2px solid yellow;
-    width: 430px;
-    display: flex;
-    flex-wrap: wrap;
+    width: 50rem;
     gap: 20px;
   }
-  
+}
+@media screen and (min-width: 911px) {
+  body {
+    height: 100vh;
+    overflow: hidden;
+  }
   button {
-    width: 90px;
-    height: 90px;
-    border-radius: 50px;
-    font-size: 2.5rem;
-    background-color: #424242;
-    color: white;
-    border: none;
-    cursor: pointer;
+    width: 3rem;
+    height: 3rem;
+    margin-left: 1vw;
   }
-  
-  button:hover {
-    background-color: #5a5a5a;
+  .keys {
+    width: 50rem;
+    gap: 20px;
   }
-  
-  button:active {
-    background-color: #858585;
+}
+@media screen and (min-width: 722px) {
+  body {
+    height: 100vh;
+    overflow: hidden;
   }
-  
-  .operator {
-    background-color: #ffa500;
+  button {
+    width: 5.3rem;
+    height: 5.3rem;
+    margin-left: vw;
   }
-  
-  .operator:hover {
-    background-color: #fcb735;
+  .keys {
+    width: 30rem;
   }
-  
-  .operator:active {
-    background-color: #fecc71;
+}
+
+@media screen and (max-width: 720px) {
+  body {
+    height: 100vh;
+    overflow: hidden;
   }
+  button {
+    width: 5.3rem;
+    height: 5.3rem;
+    margin-left: 6vw;
+  }
+  .keys {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 599px) {
+  body {
+    height: 100vh;
+    overflow: hidden;
+  }
+  button {
+    width: 5.3rem;
+    height: 5.3rem;
+    margin-left: vw;
+  }
+  .keys {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 554px) {
+  body {
+    height: 100vh;
+    overflow: hidden;
+  }
+  button {
+    width: 5rem;
+    height: 5rem;
+    margin-left: 5vw;
+  }
+  .keys {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  button {
+    width: 80px;
+    height: 80px;
+    margin-left: 4vw;
+  }
+  .keys {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 468px) {
+  body {
+    height: 100vh;
+    overflow: hidden;
+  }
+  button {
+    width: 80px;
+    height: 80px;
+    margin-left: 2vw;
+  }
+  .keys {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 421px) {
+  body {
+    height: 100vh;
+    overflow: hidden;
+  }
+  button {
+    width: 80px;
+    height: 80px;
+    margin-left: 1vw;
+  }
+  .keys {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  body {
+    height: 100vh;
+    overflow: hidden;
+  }
+  button {
+    width: 40px;
+    height: 40px;
+    margin-left: 2vw;
+  }
+  .keys {
+    width: 100%;
+    gap: 3vw;
+  }
+}
+@media screen and (max-width: 372px) {
+  body {
+    height: 100vh;
+    overflow: hidden;
+  }
+  button {
+    width: 3%;
+    height: 30px;
+    margin-left: 1vw;
+  }
+  .keys {
+    width: 100%;
+    gap: 2vw;
+  }
+}
